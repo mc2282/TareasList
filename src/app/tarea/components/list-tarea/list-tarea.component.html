@@ -1,0 +1,14 @@
+<app-add-tarea (emitirTarea)="addListaTarea($event)"></app-add-tarea>
+
+<section>
+  <h2>Lista Tareas</h2>
+  <ul>
+    @for (tarea of lista; track tarea.id){
+    <li>{{tarea.id}} {{tarea.tarea}}
+      <button id='btnUpdate' [routerLink]="['update', tarea.id]">Actualizar</button>
+      <button id='btnDelete' (click)="eliminarTarea(tarea.id)">Delete</button>
+    </li>
+    }
+  </ul>
+
+</section>

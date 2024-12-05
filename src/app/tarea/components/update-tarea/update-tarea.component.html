@@ -1,0 +1,14 @@
+<section>
+  <h2>UpdateTask</h2>
+  <form [formGroup]="formulario" (ngSubmit)="onUpdateTarea()">
+    <label for="id">Id</label>
+    <input type="text" name="id" formControlName="id">
+
+    <label for="tarea">Tarea</label>
+    <input type="text" name="tarea" formControlName="tarea">
+
+    <div class="button_container">
+      <button type="submit">Update</button>
+    </div>
+  </form>
+</section>

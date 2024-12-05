@@ -1,0 +1,20 @@
+{
+  "tareas": [
+    {
+      "id": "1",
+      "tarea": "Reiniciar Windows"
+    },
+    {
+      "id": "2",
+      "tarea": "Instalar actualizaciones"
+    },
+    {
+      "id": "3",
+      "tarea": "Crear una cuenta"
+    },
+    {
+      "id": "4",
+      "tarea": "Desinstalar programa"
+    }
+  ]
+}

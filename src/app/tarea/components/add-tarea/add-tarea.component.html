@@ -1,0 +1,22 @@
+<section>
+
+  <form [formGroup]="formulario" (ngSubmit)="enviar()">
+
+    <label for="id">Id</label>
+    <input type="text" name="id" formControlName="id">
+
+    @if(formulario.get('id')?.touched && formulario.get('id')?.errors?.['required']){
+    <div>
+      <p>El id es obligatorio</p>
+    </div>
+    }
+
+    <label for="tarea">Tarea</label>
+    <input type="text" name="tarea" formControlName="tarea">
+
+    <div class="button_container">
+      <button type="submit">Add</button>
+    </div>
+  </form>
+
+</section>
