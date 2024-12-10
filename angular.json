@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "clase08-11": {
+    "tareaslist": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/clase08-11",
+            "outputPath": "dist/tareaslist",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "clase08-11:build:production"
+              "buildTarget": "tareaslist:build:production"
             },
             "development": {
-              "buildTarget": "clase08-11:build:development"
+              "buildTarget": "tareaslist:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -95,6 +95,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

@@ -14,6 +14,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 export class ListTareaComponent implements OnInit {
 
   ngOnInit(): void {
+
     this.tareaService.getTareas().subscribe(
       {
         next: (tareas: Tarea[]) => {
@@ -21,11 +22,13 @@ export class ListTareaComponent implements OnInit {
         }
       }
     )
+
   }
 
   tareaService = inject(TareaService);
 
   lista: Tarea[] = [];
+
 
   traerTareas() {
     this.tareaService.getTareas().subscribe(
@@ -40,10 +43,12 @@ export class ListTareaComponent implements OnInit {
     )
   }
 
+
   addListaTarea(tarea: Tarea) {
     const t = structuredClone(tarea)
     this.lista.push(t);
   }
+
 
   eliminarTarea(id: string) {
     this.tareaService.deleteTarea(id).subscribe({

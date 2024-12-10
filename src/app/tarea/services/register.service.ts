@@ -14,10 +14,4 @@ export class RegisterService {
 
   http = inject(HttpClient)
 
-  urlRegister = environment.urlRegister;
-
-  postUsuario(usuario: User): Observable<User> {
-    return this.http.post<User>(this.urlRegister, usuario)
-  }
-
 }

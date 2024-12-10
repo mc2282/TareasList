@@ -1,3 +1,3 @@
 export const environment = {
-  urlBase: 'http://localhost:3000/tareas',
+  urlBase: 'https://all-tareas.onrender.com/tareas',
 };

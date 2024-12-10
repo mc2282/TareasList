@@ -10,5 +10,5 @@ import { HeaderComponent } from '../../shared/header/header/header.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'clase08-11';
+  title = 'TareasList';
 }
